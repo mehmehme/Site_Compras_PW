@@ -41,3 +41,8 @@ Bem-vindo ao **SimpleShop**, um site simples de compras feito com **Spring Boot*
 ```bash
 git clone https://github.com/seu-usuario/simpleshop.git
 cd simpleshop
+```
+
+## 🧠 Trabalho PW por:
+**Elisa Nascimento dos Santos**
+**Luiz Carlos Firmino Façanha**
