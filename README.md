@@ -45,4 +45,4 @@ cd simpleshop
 
 ## 🧠 Trabalho PW por:
 **Elisa Nascimento dos Santos**
-**Luiz Carlos Firmino Façanha**
+**Luis Carlos Firmino Façanha**
