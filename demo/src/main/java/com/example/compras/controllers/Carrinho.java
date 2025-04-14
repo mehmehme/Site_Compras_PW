@@ -18,9 +18,9 @@ public class Carrinho {
 
         // Simula uma lista de produtos já existente no sistema
         List<Produto> produtos = List.of(
-                new Produto(1, "Camiseta", 29.90),
-                new Produto(2, "Tênis", 149.90),
-                new Produto(3, "Boné", 49.90)
+                new Produto(1, "Camiseta", 29.90, 3),
+                new Produto(2, "Tênis", 149.90, 5),
+                new Produto(3, "Boné", 49.90, 7)
         );
 
         produtos.stream()
