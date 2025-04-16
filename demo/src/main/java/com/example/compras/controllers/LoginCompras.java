@@ -23,6 +23,7 @@ public class LoginCompras {
     public String login(@RequestParam String username,
                         @RequestParam String password,
                         HttpServletResponse response) {
+        //aqui ele deve ver no banco se os dados colocados existem.
         if(username.equals("admin") && password.equals("1234")) {
             Cookie cookie = new Cookie("username", username);
             cookie.setHttpOnly(true);

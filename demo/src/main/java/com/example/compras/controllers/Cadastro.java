@@ -15,14 +15,16 @@ public class Cadastro {
                                         @RequestParam String password,
                                         @RequestParam String email,
                                         HttpServletResponse response){
-        if(username.equals("admin") && password.equals("1234") && email.equals("admin@gmail.com")){
+        if(!(username.equals("admin") &&
+                password.equals("1234") &&
+                email.equals("admin@gmail.com"))){
 
-            //adicione banco de dados
             Cookie cookie = new Cookie("username", username);
             cookie.setHttpOnly(true);
             cookie.setPath("/login");
             cookie.setMaxAge(3600);
 
+            //deve aqui adicionar os novos dados ao banco
             response.addCookie(cookie);
             return ResponseEntity.ok("Cadastrado com sucesso");
         }
