@@ -3,14 +3,17 @@ package com.example.compras.model;
 public class Produto {
     private int id;
     private String nome;
+    private String descricao;
     private double preco;
-    private int estoque;
+    private int quantidade;
 
-    public Produto(int id, String nome, double preco,int estoque) {
+    public Produto() {} // Necessário para JPA/JDBC
+
+    public Produto(int id, String nome, double preco, int quantidade) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
-        this.estoque = estoque;
+        this.quantidade = quantidade;
     }
 
     // Getters e Setters
@@ -38,11 +41,20 @@ public class Produto {
         this.preco = preco;
     }
 
-    public int getEstoque(int estoque) {
-        return estoque;
+    public int getQuantidade() {
+        return quantidade;
     }
 
-    public void setEstoque(int estoque) {
-        this.estoque = estoque;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    // Adicionado para descrição (necessário conforme enunciado)
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
